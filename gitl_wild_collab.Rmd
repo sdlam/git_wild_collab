@@ -45,10 +45,9 @@ diamonds_filtered = diamonds %>%
 ## STEP 7: Uh oh, merge conflicts!
 
 ```{r break-it-1}
-
-diamonds %>% 
-  group_by(color) %>% 
-  summarize(mean = mean(price))
+ggplot(diamonds_filtered, aes(cut, carat)) + 
+  geom_boxplot(fill = "purple") + 
+  geom_jitter(aes(color = price))
 
 ```
 
