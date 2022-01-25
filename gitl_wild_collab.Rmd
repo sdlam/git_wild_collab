@@ -45,10 +45,11 @@ diamonds_filtered = diamonds %>%
 ## STEP 7: Uh oh, merge conflicts!
 
 ```{r break-it-1}
+
 ggplot(diamonds_filtered, aes(cut, carat)) + 
   geom_boxplot(fill = "purple") + 
   geom_jitter(aes(color = price))
-
+#fixed merge conflict, kept your plot
 ```
 
 ## STEP 11: And even more merge conflicts!
@@ -57,6 +58,5 @@ ggplot(diamonds_filtered, aes(cut, carat)) +
 ### Both partners - delete this comment, then write some code here
 ### to plot, summarize, calculate something simple using the diamonds
 ### dataset.
-
 
 ```
