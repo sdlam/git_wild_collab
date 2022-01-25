@@ -1,6 +1,6 @@
 ---
 title: "Git Wild Collab"
-author: "Sarah Lam"
+author: "Sarah Lam and Allie Caughman"
 date: "1/25/2022"
 output: html_document
 ---
@@ -36,7 +36,8 @@ library(tidyverse)
 ### ggplot2 package) and create a subset based on filtering, e.g., 
 ### size greater than 1 carat or cut is "Ideal"
 
-
+diamonds_filtered = diamonds %>% 
+  filter(carat > 1 | cut == "Ideal")
 
 ```
 
