@@ -28,7 +28,8 @@ library(tidyverse)
 ### ggplot2 package) and create a plot of price vs. carat (or some other
 ### variables of your choice)
 
-
+ggplot(data = diamonds, aes(x = carat, y = price)) +
+  geom_point()
 ```
 
 ```{r partner 2}
